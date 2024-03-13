@@ -6,13 +6,15 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Person p1 = new Person("asd", "asd");
+        Person p1 = new Person("Artiom", "Future");
 
         List<Person> personList = new ArrayList<>();
 
         personList.add(p1);
 
         printListWildCard(personList);
+
+        printList(personList);
     }
 
     public static <T> void printList(List<T> inputList){
